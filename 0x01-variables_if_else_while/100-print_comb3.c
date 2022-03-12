@@ -1,3 +1,10 @@
+#include <stdio.h>
+
+/**
+ * main - print out all possible combinations of double-digit numbers
+ * Return: if successful, return 0
+ */
+
 int main(void)
 {
 	int n, m;
@@ -20,12 +27,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}#include <stdio.h>
-
-/**
- * main - print out all possible combinations of double-digit numbers
- * Return: if successful, return 0
- */
-
-
-
+}
