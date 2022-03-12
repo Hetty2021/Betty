@@ -1,4 +1,26 @@
-#include <stdio.h>
+int main(void)
+{
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
+	{
+		for (m = 49; m <= 57; m++)
+		{
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}#include <stdio.h>
 
 /**
  * main - print out all possible combinations of double-digit numbers
@@ -6,24 +28,4 @@
  */
 
 
-int main(void)
-{
-    
-	for (int i = 0; i <= 9; i++)
-	{
-	    for (int j = i + 1; j <= 9; j++)
-	    {
-	        putchar(i + '0');
-	        putchar(j + '0');
-	        if (((i * 10) + j) < 89)
-	        {
-	            putchar(',');
-                putchar(' ');
-
-	        }
-	    }
-	}
-	putchar('\n');
-    return 0;
-}
 
